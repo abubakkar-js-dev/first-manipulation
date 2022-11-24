@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom manipulation</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Learning Dom Manipulation</h1>
+        <ul id="list">
+            <li>One</li>
+            <li>Two</li>
+            <li>Three</li>
+            <li>Four</li>
+        </ul>
+        <div class="from-group">
+            <label for="name" id="form-title">What is your name:</label>
+            <input class="from-control" type="text" id="name"
+            placeholder="Enter your name">
+            <p id="show-name"></p>
+        </div>
+        <button id="btn">Add More</button>
+
+        <div class="cheak-list">
+            <label for="">Choose Your Skills</label>
+            <div class="form-cheak">
+                <input class="form-cheak-input" type="checkbox"
+                id="gridcheak1" name="skills" value="C Programming">
+                <label id="from-cheak-label" for="C Programming">
+                    C Programming
+                </label>
+            </div>
+            <div class="form-cheak">
+                <input class="form-cheak-input" type="checkbox"
+                id="gridcheak2" name="skills" value="Java Programming">
+                <label id="from-cheak-label" for="Java Programming">
+                    Java Programming
+                </label>
+            </div>
+            <div class="form-cheak">
+                <input class="form-cheak-input" type="checkbox"
+                id="gridcheak3" name="skills" value="Javascript">
+                <label id="from-cheak-label" for="Javascript">
+                    Javascript
+                </label>
+            </div>
+            <div class="form-cheak">
+                <input class="form-cheak-input" type="checkbox"
+                id="gridcheak4" name="skills" value="Python">
+                <label id="from-cheak-label" for="Python">
+                    Python
+                </label>
+                <div>
+                    <p class="lead"><strong>Selected Skills:</strong></p>
+                    <br>
+                    <span id="have-skills"></span>
+                </div>
+            </div>
+        </div>
+
+        <div id="color-box">
+            <p>(<span id="x-position">0,</span>
+            <span id="y-position">0</span>)</p>
+        </div>
+
+    </div>
+<script src="./js/manipulate.js"></script>    
+</body>
+
+</html>
